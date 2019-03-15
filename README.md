@@ -1,5 +1,5 @@
 # Unlocking the Hidden Potential of Unstructuctured News Data with NLP
-This repository provides Python code and Jupyter Notebooks for the Dow Jones applied research paper _“Unlocking the Hidden Potential of Unstructured News Data with NLP: Understanding Advanced Analytics through Real-World Case Studies"_.
+This repository provides Python code and Jupyter Notebooks for the Dow Jones applied research paper _Unlocking the Hidden Potential of Unstructured News Data with NLP: Understanding Advanced Analytics through Real-World Case Studies_.
 
 <img src="http://hilpisch.com/images/dna_paper_cover.png" width="500">
 
