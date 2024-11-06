@@ -12,6 +12,7 @@ import avro.schema
 import pandas as pd
 from avro.io import DatumReader
 from avro.datafile import DataFileReader
+from security import safe_requests
 
 # snapshot planning
 explain_url = 'https://api.dowjones.com/alpha/extractions/documents/_explain'
@@ -118,7 +119,7 @@ def download_snapshots(snapshot_files, path, headers, verbose=True):
         filename = url.split('/')[-1]
         if verbose:
             print('Downloading file {} \r'.format(filename), end='')
-        download = requests.get(url, headers=headers,
+        download = safe_requests.get(url, headers=headers,
                                 allow_redirects=True, stream=True)
         filename = os.path.join(path, filename)
         with open(filename, 'wb') as fd:
